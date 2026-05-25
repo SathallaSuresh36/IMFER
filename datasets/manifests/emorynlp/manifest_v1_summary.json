@@ -1,0 +1,10 @@
+{
+  "dataset": "emorynlp",
+  "manifest_version": "v1",
+  "num_records": 12606,
+  "splits": {
+    "dev": 1344,
+    "test": 1328,
+    "train": 9934
+  }
+}

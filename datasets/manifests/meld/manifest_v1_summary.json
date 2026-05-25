@@ -1,0 +1,10 @@
+{
+  "dataset": "meld",
+  "manifest_version": "v1",
+  "num_records": 13707,
+  "splits": {
+    "dev": 1108,
+    "test": 2610,
+    "train": 9989
+  }
+}

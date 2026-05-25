@@ -1,0 +1,10 @@
+{
+  "dataset": "iemocap",
+  "manifest_version": "v1",
+  "num_records": 7532,
+  "splits": {
+    "test": 1650,
+    "train": 5354,
+    "val": 528
+  }
+}
