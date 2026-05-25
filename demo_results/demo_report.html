@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IMFER Demo — Emotion Recognition Results</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; margin: 40px; background: #f5f7fa; }
+        .container { max-width: 900px; margin: 0 auto; }
+        h1 { color: #2c3e50; text-align: center; }
+        .clip-card { background: white; border-radius: 12px; padding: 25px; margin: 20px 0;
+                     box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+        .clip-header { display: flex; justify-content: space-between; align-items: center; }
+        .clip-name { font-size: 18px; font-weight: 700; color: #2c3e50; }
+        .ground-truth { padding: 4px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+        .gt-sarcasm { background: #fdebd0; color: #d35400; }
+        .gt-happy { background: #d5f5e3; color: #27ae60; }
+        .prediction { font-size: 24px; font-weight: 700; color: #2980b9; margin: 15px 0; }
+        .confidence { font-size: 14px; color: #7f8c8d; }
+        .transcription { background: #f8f9fa; padding: 12px; border-radius: 8px; margin: 10px 0;
+                         font-style: italic; color: #555; border-left: 4px solid #3498db; }
+        .mcs-bar { height: 24px; border-radius: 4px; margin: 4px 0; display: flex; align-items: center; }
+        .mcs-label { width: 70px; font-weight: 600; font-size: 13px; }
+        .mcs-fill { height: 100%; border-radius: 4px; min-width: 2px; }
+        .mcs-text { background: #3498db; }
+        .mcs-audio { background: #e74c3c; }
+        .mcs-visual { background: #27ae60; }
+        .mcs-value { margin-left: 8px; font-size: 12px; color: #555; }
+        table { width: 100%; border-collapse: collapse; margin: 10px 0; }
+        th, td { padding: 8px 12px; text-align: left; border-bottom: 1px solid #eee; }
+        th { background: #2c3e50; color: white; font-size: 13px; }
+        .url-link { font-size: 12px; color: #3498db; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🎭 IMFER Demo — Emotion Recognition with MCS Attribution</h1>
+    <p style="text-align:center; color: #7f8c8d;">
+        Model: IMFER (IEMOCAP checkpoint, seed_42) | Classes: happy, sad, neutral, angry, excited, frustrated
+    </p>
+
+    <div class="clip-card">
+        <div class="clip-header">
+            <span class="clip-name">Happy Clip 1</span>
+            <span class="ground-truth gt-happy">Expected: Happy</span>
+        </div>
+        <div class="transcription">"Can I open? Yes, thank you. I'm gonna get that one. Vagonia, nice choice. Is that what it is? Yeah. It is pretty. Yeah. Don't let any pets eat the leaves. They can be slightly toxic. It's really unsla"</div>
+        <p class="url-link">Source: <a href="https://www.youtube.com/shorts/AlBdt-V3D1o">https://www.youtube.com/shorts/AlBdt-V3D1o</a></p>
+        <div class="prediction">Predicted: HAPPY</div>
+        <p class="confidence">Confidence: 92.7%</p>
+
+        <h4 style="margin-top:20px;">Modality Contribution Scores (MCS)</h4>
+        <div class="mcs-bar">
+            <span class="mcs-label">Text</span>
+            <div class="mcs-fill mcs-text" style="width: 16.99024721936478px;"></div>
+            <span class="mcs-value">0.0670 (6.7%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Audio</span>
+            <div class="mcs-fill mcs-audio" style="width: 200.0px;"></div>
+            <span class="mcs-value">0.7890 (78.9%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Visual</span>
+            <div class="mcs-fill mcs-visual" style="width: 36.4926771991349px;"></div>
+            <span class="mcs-value">0.1440 (14.4%)</span>
+        </div>
+
+        <h4 style="margin-top:20px;">Class Probabilities</h4>
+        <table>
+            <tr><th>Emotion</th><th>Probability</th></tr>
+            <tr><td>happy</td><td>0.9272</td></tr>
+            <tr><td>neutral</td><td>0.0428</td></tr>
+            <tr><td>angry</td><td>0.0298</td></tr>
+            <tr><td>sad</td><td>0.0002</td></tr>
+            <tr><td>excited</td><td>0.0000</td></tr>
+            <tr><td>frustrated</td><td>0.0000</td></tr>
+        </table>
+    </div>
+    <div class="clip-card">
+        <div class="clip-header">
+            <span class="clip-name">Sad Clip 1</span>
+            <span class="ground-truth gt-happy">Expected: Sad</span>
+        </div>
+        <div class="transcription">"Daniel, can we talk? You look upset. Yeah Rachel, I think we need to break up. What? Why are you saying this now? I feel like we argue all the time and it hurts. But I still care about you. Doesn't th"</div>
+        <p class="url-link">Source: <a href="https://www.youtube.com/shorts/DWOC-x3T-34">https://www.youtube.com/shorts/DWOC-x3T-34</a></p>
+        <div class="prediction">Predicted: SAD</div>
+        <p class="confidence">Confidence: 72.1%</p>
+
+        <h4 style="margin-top:20px;">Modality Contribution Scores (MCS)</h4>
+        <div class="mcs-bar">
+            <span class="mcs-label">Text</span>
+            <div class="mcs-fill mcs-text" style="width: 31.962780151610225px;"></div>
+            <span class="mcs-value">0.0885 (8.8%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Audio</span>
+            <div class="mcs-fill mcs-audio" style="width: 200.0px;"></div>
+            <span class="mcs-value">0.5537 (55.4%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Visual</span>
+            <div class="mcs-fill mcs-visual" style="width: 129.24612887332003px;"></div>
+            <span class="mcs-value">0.3578 (35.8%)</span>
+        </div>
+
+        <h4 style="margin-top:20px;">Class Probabilities</h4>
+        <table>
+            <tr><th>Emotion</th><th>Probability</th></tr>
+            <tr><td>sad</td><td>0.7212</td></tr>
+            <tr><td>angry</td><td>0.2430</td></tr>
+            <tr><td>neutral</td><td>0.0340</td></tr>
+            <tr><td>happy</td><td>0.0018</td></tr>
+            <tr><td>excited</td><td>0.0000</td></tr>
+            <tr><td>frustrated</td><td>0.0000</td></tr>
+        </table>
+    </div>
+    <div class="clip-card">
+        <div class="clip-header">
+            <span class="clip-name">Sad Clip 2</span>
+            <span class="ground-truth gt-happy">Expected: Sad</span>
+        </div>
+        <div class="transcription">"You don't miss me. No one will ever love you as much as I do. Why isn't love enough?"</div>
+        <p class="url-link">Source: <a href="https://www.youtube.com/shorts/WBKX_gyXNKw">https://www.youtube.com/shorts/WBKX_gyXNKw</a></p>
+        <div class="prediction">Predicted: SAD</div>
+        <p class="confidence">Confidence: 40.8%</p>
+
+        <h4 style="margin-top:20px;">Modality Contribution Scores (MCS)</h4>
+        <div class="mcs-bar">
+            <span class="mcs-label">Text</span>
+            <div class="mcs-fill mcs-text" style="width: 32.17865532725754px;"></div>
+            <span class="mcs-value">0.1116 (11.2%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Audio</span>
+            <div class="mcs-fill mcs-audio" style="width: 200.0px;"></div>
+            <span class="mcs-value">0.6937 (69.4%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Visual</span>
+            <div class="mcs-fill mcs-visual" style="width: 56.14503941093136px;"></div>
+            <span class="mcs-value">0.1947 (19.5%)</span>
+        </div>
+
+        <h4 style="margin-top:20px;">Class Probabilities</h4>
+        <table>
+            <tr><th>Emotion</th><th>Probability</th></tr>
+            <tr><td>sad</td><td>0.4081</td></tr>
+            <tr><td>happy</td><td>0.3789</td></tr>
+            <tr><td>angry</td><td>0.1938</td></tr>
+            <tr><td>neutral</td><td>0.0192</td></tr>
+            <tr><td>excited</td><td>0.0000</td></tr>
+            <tr><td>frustrated</td><td>0.0000</td></tr>
+        </table>
+    </div>
+    <div class="clip-card">
+        <div class="clip-header">
+            <span class="clip-name">Angry Clip 1</span>
+            <span class="ground-truth gt-happy">Expected: Angry</span>
+        </div>
+        <div class="transcription">"We'll be asking the questions, old man. Who are you? You. No, not me, you. Yes, I am you. Just answer the damn questions. Who are you? I have told you. Are you deaf? No, you is blind. I'm not blind, y"</div>
+        <p class="url-link">Source: <a href="https://www.youtube.com/shorts/5lNBML2BJdU">https://www.youtube.com/shorts/5lNBML2BJdU</a></p>
+        <div class="prediction">Predicted: ANGRY</div>
+        <p class="confidence">Confidence: 92.4%</p>
+
+        <h4 style="margin-top:20px;">Modality Contribution Scores (MCS)</h4>
+        <div class="mcs-bar">
+            <span class="mcs-label">Text</span>
+            <div class="mcs-fill mcs-text" style="width: 12.594550878935681px;"></div>
+            <span class="mcs-value">0.0497 (5.0%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Audio</span>
+            <div class="mcs-fill mcs-audio" style="width: 200.0px;"></div>
+            <span class="mcs-value">0.7893 (78.9%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Visual</span>
+            <div class="mcs-fill mcs-visual" style="width: 40.79542167020623px;"></div>
+            <span class="mcs-value">0.1610 (16.1%)</span>
+        </div>
+
+        <h4 style="margin-top:20px;">Class Probabilities</h4>
+        <table>
+            <tr><th>Emotion</th><th>Probability</th></tr>
+            <tr><td>angry</td><td>0.9237</td></tr>
+            <tr><td>neutral</td><td>0.0760</td></tr>
+            <tr><td>happy</td><td>0.0003</td></tr>
+            <tr><td>sad</td><td>0.0000</td></tr>
+            <tr><td>excited</td><td>0.0000</td></tr>
+            <tr><td>frustrated</td><td>0.0000</td></tr>
+        </table>
+    </div>
+    <div class="clip-card">
+        <div class="clip-header">
+            <span class="clip-name">Neutral Clip 1</span>
+            <span class="ground-truth gt-happy">Expected: Neutral</span>
+        </div>
+        <div class="transcription">"Hello, flying to Los Angeles at 2 o'clock in the afternoon. Can I see your passport please? Sure. Do you know if the flight is on time? Your flight's been delayed about 30 minutes. Well is it okay if "</div>
+        <p class="url-link">Source: <a href="https://www.youtube.com/shorts/UyIGnJIMFFc">https://www.youtube.com/shorts/UyIGnJIMFFc</a></p>
+        <div class="prediction">Predicted: NEUTRAL</div>
+        <p class="confidence">Confidence: 69.7%</p>
+
+        <h4 style="margin-top:20px;">Modality Contribution Scores (MCS)</h4>
+        <div class="mcs-bar">
+            <span class="mcs-label">Text</span>
+            <div class="mcs-fill mcs-text" style="width: 15.005450862704253px;"></div>
+            <span class="mcs-value">0.0529 (5.3%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Audio</span>
+            <div class="mcs-fill mcs-audio" style="width: 200.0px;"></div>
+            <span class="mcs-value">0.7045 (70.4%)</span>
+        </div>
+        <div class="mcs-bar">
+            <span class="mcs-label">Visual</span>
+            <div class="mcs-fill mcs-visual" style="width: 68.89146754907046px;"></div>
+            <span class="mcs-value">0.2427 (24.3%)</span>
+        </div>
+
+        <h4 style="margin-top:20px;">Class Probabilities</h4>
+        <table>
+            <tr><th>Emotion</th><th>Probability</th></tr>
+            <tr><td>neutral</td><td>0.6967</td></tr>
+            <tr><td>angry</td><td>0.2960</td></tr>
+            <tr><td>happy</td><td>0.0072</td></tr>
+            <tr><td>sad</td><td>0.0002</td></tr>
+            <tr><td>excited</td><td>0.0000</td></tr>
+            <tr><td>frustrated</td><td>0.0000</td></tr>
+        </table>
+    </div>
+</div>
+</body>
+</html>

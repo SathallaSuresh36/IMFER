@@ -1,0 +1,97 @@
+[
+  {
+    "name": "happy_clip_1",
+    "url": "https://www.youtube.com/shorts/AlBdt-V3D1o",
+    "expected": "Happy",
+    "text": "Can I open? Yes, thank you. I'm gonna get that one. Vagonia, nice choice. Is that what it is? Yeah. It is pretty. Yeah. Don't let any pets eat the leaves. They can be slightly toxic. It's really unslately toxic. What is it with me and roommates? I've been really as you roomed with all of my exits.",
+    "predicted_class": 0,
+    "confidence": 0.9272337555885315,
+    "probabilities": [
+      0.9272337555885315,
+      0.00022607324353884906,
+      0.0427597314119339,
+      0.029780490323901176,
+      0.0,
+      0.0
+    ],
+    "mcs_text": 0.06702718138694763,
+    "mcs_audio": 0.7890077233314514,
+    "mcs_visual": 0.14396502077579498
+  },
+  {
+    "name": "sad_clip_1",
+    "url": "https://www.youtube.com/shorts/DWOC-x3T-34",
+    "expected": "Sad",
+    "text": "Daniel, can we talk? You look upset. Yeah Rachel, I think we need to break up. What? Why are you saying this now? I feel like we argue all the time and it hurts. But I still care about you. Doesn't that matter? It does, but I'm tired of feeling sad every day. You could have talked to me before deciding this. I tried, but you never really listened. So that's it? Just goodbye? I'm sorry, Rachel. I hope you'll be okay.",
+    "predicted_class": 1,
+    "confidence": 0.7211728096008301,
+    "probabilities": [
+      0.0018358307424932718,
+      0.7211728096008301,
+      0.03396758809685707,
+      0.24302376806735992,
+      0.0,
+      0.0
+    ],
+    "mcs_text": 0.08848833292722702,
+    "mcs_audio": 0.5536960959434509,
+    "mcs_visual": 0.35781538486480713
+  },
+  {
+    "name": "sad_clip_2",
+    "url": "https://www.youtube.com/shorts/WBKX_gyXNKw",
+    "expected": "Sad",
+    "text": "You don't miss me. No one will ever love you as much as I do. Why isn't love enough?",
+    "predicted_class": 1,
+    "confidence": 0.4080924987792969,
+    "probabilities": [
+      0.37890732288360596,
+      0.4080924987792969,
+      0.019221128895878792,
+      0.19377900660037994,
+      0.0,
+      0.0
+    ],
+    "mcs_text": 0.11160597205162048,
+    "mcs_audio": 0.6936646103858948,
+    "mcs_visual": 0.19472913444042206
+  },
+  {
+    "name": "angry_clip_1",
+    "url": "https://www.youtube.com/shorts/5lNBML2BJdU",
+    "expected": "Angry",
+    "text": "We'll be asking the questions, old man. Who are you? You. No, not me, you. Yes, I am you. Just answer the damn questions. Who are you? I have told you. Are you deaf? No, you is blind. I'm not blind, you blind. Then it's what I just said. You just said what? I did not say what. I said you. That's what I'm asking you. And you is answering. Shut up. You. Yes. Not you, him. What's your name? Me. Yes, you. I am me. He's me. And I'm you.",
+    "predicted_class": 3,
+    "confidence": 0.9237402677536011,
+    "probabilities": [
+      0.00026173488004133105,
+      3.749203460756689e-05,
+      0.07596052438020706,
+      0.9237402677536011,
+      0.0,
+      0.0
+    ],
+    "mcs_text": 0.04970421642065048,
+    "mcs_audio": 0.7892971634864807,
+    "mcs_visual": 0.16099855303764343
+  },
+  {
+    "name": "neutral_clip_1",
+    "url": "https://www.youtube.com/shorts/UyIGnJIMFFc",
+    "expected": "Neutral",
+    "text": "Hello, flying to Los Angeles at 2 o'clock in the afternoon. Can I see your passport please? Sure. Do you know if the flight is on time? Your flight's been delayed about 30 minutes. Well is it okay if I choose a seat? Do you have any aisle seats available? Let me check. Sure, no problem. Do you have any check-in luggage? No, just one carry-on bag. Okay, here's your boarding pass. Your boarding time is at 2.15 pm, and your gate number is T27. Okay, in which way's security check? Right behind you to the left sir. Thank you so much.",
+    "predicted_class": 2,
+    "confidence": 0.6966670155525208,
+    "probabilities": [
+      0.007193771190941334,
+      0.00017561404092703015,
+      0.6966670155525208,
+      0.2959635555744171,
+      0.0,
+      0.0
+    ],
+    "mcs_text": 0.05285527557134628,
+    "mcs_audio": 0.7044810056686401,
+    "mcs_visual": 0.2426636517047882
+  }
+]
