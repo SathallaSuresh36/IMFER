@@ -1,0 +1,2 @@
+seed,wf1,mf1,accuracy,mcs_text,mcs_audio,mcs_visual,prediction_file
+42,18.882977339542624,8.788927335640139,35.80827067669173,0.36875950843375876,0.3595292315419231,0.27171116760630803,./artifacts\iemocap\seed_42\predictions\test_predictions.csv

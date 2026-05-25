@@ -1,0 +1,49 @@
+{
+  "dataset": "iemocap",
+  "num_runs": 5,
+  "wf1_mean": 3.7765954679085247,
+  "wf1_std": 8.444724189761086,
+  "wf1_ci95": 7.402127117100707,
+  "runs": [
+    {
+      "wf1": 0.0,
+      "mf1": 0.0,
+      "accuracy": 0.0,
+      "num_samples": 1,
+      "seed": 1024,
+      "prediction_file": "./artifacts\\iemocap\\seed_1024\\predictions\\test_predictions.csv"
+    },
+    {
+      "wf1": 0.0,
+      "mf1": 0.0,
+      "accuracy": 0.0,
+      "num_samples": 1,
+      "seed": 123,
+      "prediction_file": "./artifacts\\iemocap\\seed_123\\predictions\\test_predictions.csv"
+    },
+    {
+      "wf1": 0.0,
+      "mf1": 0.0,
+      "accuracy": 0.0,
+      "num_samples": 1,
+      "seed": 256,
+      "prediction_file": "./artifacts\\iemocap\\seed_256\\predictions\\test_predictions.csv"
+    },
+    {
+      "wf1": 18.882977339542624,
+      "mf1": 8.788927335640139,
+      "accuracy": 35.80827067669173,
+      "num_samples": 1064,
+      "seed": 42,
+      "prediction_file": "./artifacts\\iemocap\\seed_42\\predictions\\test_predictions.csv"
+    },
+    {
+      "wf1": 0.0,
+      "mf1": 0.0,
+      "accuracy": 0.0,
+      "num_samples": 1,
+      "seed": 512,
+      "prediction_file": "./artifacts\\iemocap\\seed_512\\predictions\\test_predictions.csv"
+    }
+  ]
+}

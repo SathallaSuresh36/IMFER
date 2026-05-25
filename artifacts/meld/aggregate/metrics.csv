@@ -1,0 +1,2 @@
+seed,wf1,mf1,accuracy,mcs_text,mcs_audio,mcs_visual,prediction_file
+42,22.11550374931395,8.353052025957632,21.57088122605364,0.3341506585992616,0.3329186733655089,0.33293066950821787,./artifacts\meld\seed_42\predictions\test_predictions.csv

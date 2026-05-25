@@ -1,0 +1,2 @@
+seed,wf1,mf1,accuracy,mcs_text,mcs_audio,mcs_visual,prediction_file
+42,10.938297016330079,5.94599199250362,26.28012048192771,0.31321635807538967,0.39581796042172307,0.2909656783161932,./artifacts\emorynlp\seed_42\predictions\test_predictions.csv

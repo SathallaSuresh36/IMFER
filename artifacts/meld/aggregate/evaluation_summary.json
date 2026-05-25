@@ -1,0 +1,17 @@
+{
+  "dataset": "meld",
+  "num_runs": 1,
+  "wf1_mean": 22.11550374931395,
+  "wf1_std": 0.0,
+  "wf1_ci95": 0.0,
+  "runs": [
+    {
+      "wf1": 22.11550374931395,
+      "mf1": 8.353052025957632,
+      "accuracy": 21.57088122605364,
+      "num_samples": 2610,
+      "seed": 42,
+      "prediction_file": "./artifacts\\meld\\seed_42\\predictions\\test_predictions.csv"
+    }
+  ]
+}

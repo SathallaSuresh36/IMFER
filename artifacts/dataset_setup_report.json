@@ -1,0 +1,36 @@
+{
+  "root": "D:\\sureshsathalla\\IMFER",
+  "datasets": [
+    {
+      "dataset": "iemocap",
+      "metadata_exists": true,
+      "align_files_present": {
+        "train_align.pkl": true,
+        "valid_align.pkl": true,
+        "test_align.pkl": true
+      },
+      "datasets_dir": "D:\\sureshsathalla\\IMFER\\datasets\\IEMOCAP"
+    },
+    {
+      "dataset": "meld",
+      "metadata_exists": true,
+      "align_files_present": {
+        "train_align.pkl": true,
+        "valid_align.pkl": true,
+        "test_align.pkl": true
+      },
+      "datasets_dir": "D:\\sureshsathalla\\IMFER\\datasets\\MELD"
+    },
+    {
+      "dataset": "emorynlp",
+      "metadata_exists": true,
+      "align_files_present": {
+        "train_align.pkl": true,
+        "valid_align.pkl": true,
+        "test_align.pkl": true
+      },
+      "datasets_dir": "D:\\sureshsathalla\\IMFER\\datasets\\EmoryNLP"
+    }
+  ],
+  "actions": []
+}
